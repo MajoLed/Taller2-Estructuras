@@ -6,6 +6,7 @@ public class SecuenciaLista implements SecuenciaEnteros {
         this.tamano = valores.length;
     }
 
+    @Override
     public int obtener(int i) {
         Nodo actual = cabeza;
         for (int k = 0; k < i; k++) {
