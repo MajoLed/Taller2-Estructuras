@@ -3,8 +3,21 @@ public class SecuenciaLista implements SecuenciaEnteros {
     private int tamano;
 
     public SecuenciaLista(int[] valores) {
-        this.tamano = valores.length;
+    this.tamano = valores.length;
+
+    if (valores.length == 0) {
+        cabeza = null;
+        return;
     }
+
+    cabeza = new Nodo(valores[0]);
+    Nodo actual = cabeza;
+
+    for (int i = 1; i < valores.length; i++) {
+        actual.siguiente = new Nodo(valores[i]);
+        actual = actual.siguiente;
+    }
+}
 
     @Override
     public int obtener(int i) {
