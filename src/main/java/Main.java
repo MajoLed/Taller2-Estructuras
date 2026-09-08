@@ -8,7 +8,7 @@ public class Main {
         SecuenciaEnteros lista = new SecuenciaLista(datos1);
 
         // Algoritmo 1
-        System.out.println("Inversiones: " + contarInversiones(arreglo)
+        System.out.println("Inversiones: " + contarInversiones(arreglo, 5)
         );
 
         // Algoritmo 2
