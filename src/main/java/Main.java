@@ -30,28 +30,27 @@ public class Main {
     }
 
     // 1. Conteo de inversiones con corte temprano
-    public static int contarInversiones(SecuenciaEnteros secuencia) {
+    public static int contarInversiones(
+        SecuenciaEnteros secuencia, int T) {
 
-        int T = secuencia.tamano();
-        int contador = 0;
+    int n = secuencia.tamano();
+    int contador = 0;
 
-        for (int i = 0; i < T; i++) {
-            for (int j = i + 1; j < T; j++) {
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
 
-                if (secuencia.obtener(i) > secuencia.obtener(j)) {
-                    contador++;
+            if (secuencia.obtener(i) > secuencia.obtener(j)) {
+                contador++;
 
-                    if (contador >= T) {
-                        return contador;
-                    }
+                if (contador >= T) {
+                    return contador;
                 }
             }
         }
-
-        return contador;
     }
 
-
+    return contador;
+}
     // 2. Primer par con diferencia mayor a D
     public static int[] primerParConDiferencia(SecuenciaEnteros secuencia, int D) {
 
