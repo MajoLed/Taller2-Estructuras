@@ -139,6 +139,7 @@ public class Main {
 
     // ---------- Consistencia entre representaciones ----------
 
+
     private static void probarConAmbasRepresentaciones() {
         int[] datos = {5, 1, 4, 2, 3, 9, 0, 7};
 

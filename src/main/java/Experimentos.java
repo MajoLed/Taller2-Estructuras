@@ -37,7 +37,7 @@ public class Experimentos {
                 long inicio = System.nanoTime();
 
                 // Algoritmo seleccionado
-                Main.contarInversiones(secuencia);
+                Algoritmos.contarInversiones(secuencia, 5);
 
                 long fin = System.nanoTime();
 

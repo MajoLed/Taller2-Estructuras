@@ -6,6 +6,7 @@
  */
 import java.util.Arrays;
 
+
 public class SecuenciaArreglo implements SecuenciaEnteros {
 
     int[] datos;
